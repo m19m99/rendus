@@ -1,0 +1,20 @@
+{
+
+    "manifest_version": 2,
+    "name": "extjs",
+    "version": "1.0",
+    "description": "Afficher les titres en rouge, encore mettre un cadre vert autour de chaque page web, aggrandir les photos quand la souris passe dessus",
+  
+    "icons": {
+      "50": "icons/icons.png"
+    },
+  
+    "content_scripts": [
+      {
+        "matches": ["*://*/*"],
+        "js": ["extjs.js"]
+      }
+    ]
+  
+  }
+  
